@@ -28,6 +28,36 @@ ul{
     margin:auto;
 }
 
+.hover-box{
+background-color:blue;
+padding:20px;
+border-radius:8px;
+transition: transfor 0.3s;
+}
+
+.hover-box:hover{
+    transform:scale(1.1);
+    background-color:#f5f5f5;
+}
+
+.animated-box{
+    width:150px;
+    height:150px;
+    background-color: teal;
+    color: white;
+    display:flex;
+    justify-content:center;
+    align-items: crnter;
+    animation: moveboxn 2s infinite;
+    border-radius: 10px;
+}
+
+@keyframes movebox{
+    0%{transform: translateX(0);}
+    50%{transform: translatex(50px;) }
+    100%{ transform: translatex(0) }
+}
+
 .contact form{
     max-width:400px;
     margin:auto;
